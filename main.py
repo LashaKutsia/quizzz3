@@ -1,5 +1,5 @@
-import os
-os.system("pip install requests")
+# import os
+# os.system("pip install requests")
 import json
 
 import requests
