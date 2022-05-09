@@ -9,6 +9,7 @@ resp = requests.get(f'http://api.openweathermap.org/geo/1.0/direct?q={city}&appi
 print(resp.text)
 print(resp.status_code)
 print(resp.headers)
+print("###")
 r = json.loads(resp.text)
 with open('data.name', 'w')as file:
     json.dump(r, file, indent=4)
